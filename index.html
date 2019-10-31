@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Twitter Friends</title>
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <style>
+    header,
+    footer {
+      padding: 10px;
+      background-color: blueviolet;
+      color: #fff;
+    }
+  </style>
+  <link rel="stylesheet" href="components/twitter-friends/twitter-friends.css">
+</head>
+<body>
+
+  <header>
+    Header
+  </header>
+
+  <div id="app">
+    <twitter-friends data="data/friends.json"></twitter-friends>
+    <twitter-friends data="data/friends.json"></twitter-friends>
+    <twitter-friends data="data/friends.json"></twitter-friends>
+  </div>
+
+  <footer>
+    footer
+  </footer>
+
+  <script src="components/twitter-friends/twitter-friends.js"></script>
+  <script>
+    new Vue({
+      el: '#app'
+    });
+  </script>
+
+</body>
+</html>

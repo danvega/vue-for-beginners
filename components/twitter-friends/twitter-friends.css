@@ -1,0 +1,11 @@
+ul {
+  list-style-type: none;
+}
+
+li {
+  line-height: 1.9;
+}
+
+a:visited {
+  color: blue;
+}
